@@ -1,0 +1,13 @@
+form .error {
+	color: #A94442;
+}
+
+span[id$=errors] {
+	color: #A94442;
+	font-weight: bold;
+}
+
+table.clickdatas {
+	padding: 20px;
+	border: 1px solid gray;
+}

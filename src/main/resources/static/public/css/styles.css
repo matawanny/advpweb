@@ -7,7 +7,7 @@ span[id$=errors] {
 	font-weight: bold;
 }
 
-table.clickdatas {
-	padding: 20px;
-	border: 1px solid gray;
+.data {
+	overflow: auto;
+	height: 500px;
 }

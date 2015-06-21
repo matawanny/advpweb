@@ -52,6 +52,30 @@ public class ClickDataDao {
 		});
 	}
 	
+	public List<ClickData> getNewClickDatas(long lastid) {
+
+		return jdbc.query("select * from clickdata where id > " + lastid + " order by id desc", new RowMapper<ClickData>() {
+
+			public ClickData mapRow(ResultSet rs, int rowNum) throws SQLException {
+				ClickData ClickData = new ClickData();
+
+				ClickData.setId(rs.getInt("id"));
+				ClickData.setIpAddress(rs.getString("ip_address"));
+				ClickData.setDevice(rs.getString("device"));
+				ClickData.setPublisherId(rs.getString("id_publisher"));
+				ClickData.setCampaignId(rs.getString("id_campaign"));
+				ClickData.setCountry(rs.getString("country"));
+				ClickData.setCity(rs.getString("city"));
+				ClickData.setPublisherChannelType(rs.getString("publisher_channel_type"));
+				ClickData.setReferrerId(rs.getString("id_referrer"));
+				ClickData.setTimestamp_sent(rs.getTimestamp("timestamp_sent"));
+				ClickData.setTimestamp_received(rs.getTimestamp("timestamp_received"));
+				return ClickData;
+			}
+
+		});
+	}
+	
 	public boolean update(ClickData clickData) {
 		BeanPropertySqlParameterSource params = new BeanPropertySqlParameterSource(clickData);
 		

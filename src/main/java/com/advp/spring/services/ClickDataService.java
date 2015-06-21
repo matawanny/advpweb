@@ -21,6 +21,10 @@ public class ClickDataService {
 	public List<ClickData> getCurrent() {
 		return clickDataDao.getClickDatas();
 	}
+	
+	public List<ClickData> getNew(long lastid) {
+		return clickDataDao.getNewClickDatas(lastid);
+	}
 
 	public void create(ClickData clickData) {
 		clickDataDao.create(clickData);

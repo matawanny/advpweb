@@ -1,5 +1,7 @@
 package com.advp.spring.controllers;
 
+import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -11,6 +13,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.advp.spring.entities.ClickData;
 import com.advp.spring.services.ClickDataService;
@@ -46,7 +49,16 @@ public class ClickDataController {
 		
 		model.addAttribute("clickdatas", clickdatas);
 		
+		model.addAttribute("lastid", clickdatas.get(clickdatas.size()-1).getId());
+		
 		return "clickdatas";
+	}
+	
+	@RequestMapping("/greetings")
+	@ResponseBody
+	public List<ClickData> greeting(@RequestParam(value="lastid", defaultValue="0") long lastid) {
+		List<ClickData> newData = clickDataService.getNew(lastid);
+        return newData;
 	}
 	
 	@RequestMapping("/createclickdata")

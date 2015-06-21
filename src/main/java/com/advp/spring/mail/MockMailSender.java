@@ -9,7 +9,7 @@ public class MockMailSender implements MailSender {
 	private static final Logger logger = LoggerFactory.getLogger(MockMailSender.class);
 
 	/* (non-Javadoc)
-	 * @see com.advp.spring.mail.MailSender#send(java.lang.String, java.lang.String, java.lang.String)
+	 * @see com.goodvideotutorials.spring.mail.MailSender#send(java.lang.String, java.lang.String, java.lang.String)
 	 */
 	@Override
 	public void send(String to, String subject, String body) {

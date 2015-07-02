@@ -43,9 +43,10 @@
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 	          <ul class="dropdown-menu">
 	            <li><a href="clickdatas">Click Data </a></li>
-	            <li><a href="/public/html/totalclick/totalclick.html">Total Clicks By Publish Channel</a></li>
-	            <li><a href="/public/html/reportbydate/index.html">Click History By Date</a></li>
-	            <li><a href="/public/html/reportbyhour/index.html">Click History By Hour</a></li>	            
+	            <li><a href="/public/html/totalclick/totalclick.html">Total Clicks Report By Publish Channel</a></li>
+	            <li><a href="/public/html/geo/georeport.html">Total Clicks Report By Geography</a></li>	    
+	            <li><a href="/public/html/byhour/index.html">Total Clicks History By Hour</a></li>	 
+	            <li><a href="/public/html/bydate/index.html">Total Clicks History By Date</a></li>
 	            <li class="divider"></li>
 	            <li><a href="#">Separated link</a></li>
 	            <li class="divider"></li>

@@ -31,7 +31,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">ADVP</a>
+	      <a class="navbar-brand" href="#">AdVP</a>
 	    </div>
 	
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,13 +40,11 @@
 	        <li class="active"><a href="#">Link</a></li>
 	        <li><a href="#">Link</a></li>
 	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports <b class="caret"></b></a>
 	          <ul class="dropdown-menu">
 	            <li><a href="clickdatas">Click Data </a></li>
-	            <li><a href="/public/html/totalclick/totalclick.html">Total Clicks Report By Publish Channel</a></li>
-	            <li><a href="/public/html/geo/georeport.html">Total Clicks Report By Geography</a></li>	    
-	            <li><a href="/public/html/byhour/index.html">Total Clicks History By Hour</a></li>	 
-	            <li><a href="/public/html/bydate/index.html">Total Clicks History By Date</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
 	            <li class="divider"></li>
 	            <li><a href="#">Separated link</a></li>
 	            <li class="divider"></li>

@@ -30,7 +30,7 @@ public class ClickDataDao {
 
 	public List<ClickData> getClickDatas() {
 
-		return jdbc.query("select * from clickdata", new RowMapper<ClickData>() {
+		return jdbc.query("select * from clickdata order by id desc", new RowMapper<ClickData>() {
 
 			public ClickData mapRow(ResultSet rs, int rowNum) throws SQLException {
 				ClickData ClickData = new ClickData();

@@ -38,13 +38,14 @@
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
 	        <li class="active"><a href="#">Link</a></li>
-	        <li><a href="#">Link</a></li>
+	        <li><a href="clickdatas">Monitor</a></li>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports <b class="caret"></b></a>
 	          <ul class="dropdown-menu">
-	            <li><a href="clickdatas">Click Data </a></li>
-	            <li><a href="#">Another action</a></li>
-	            <li><a href="#">Something else here</a></li>
+	            <li><a href="public/html/totalclick/totalclick.html">Total Clicks By Publish Channel</a></li>
+	            <li><a href="public/html/geo/georeport.html">Total Clicks By Geography Channel</a></li>
+	            <li><a href="public/html/byhour/index.html">Total Clicks By Hour</a></li>
+	            <li><a href="public/html/bydate/index.html">Total Clicks By Date</a></li>
 	            <li class="divider"></li>
 	            <li><a href="#">Separated link</a></li>
 	            <li class="divider"></li>

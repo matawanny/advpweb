@@ -49,7 +49,7 @@ public class ClickDataController {
 		
 		model.addAttribute("clickdatas", clickdatas);
 		
-		model.addAttribute("lastid", clickdatas.get(clickdatas.size()-1).getId());
+		model.addAttribute("lastid", clickdatas.get(0).getId());
 		
 		return "clickdatas";
 	}
